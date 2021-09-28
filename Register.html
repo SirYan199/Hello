@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="yiqun-tang-3o7O_6fi7Qc-unsplash.jpg">
+    <title>Login</title>
+</head>
+<body>
+    <div id="container-1">
+        <h1>Login</h1>
+        <form action="" method="GET">
+            <label for="">Username</label>
+            <p><i class="fas fa-id-card" id="user"></i><input type="text" placeholder="Type your username" required></p><hr>
+            <label for="">Password</label>
+            <p><i class="fas fa-key" id="pass"></i><input type="password" placeholder="Type your password" required></p><hr>
+            <a href="" class="fpass">Forget password?</a><br><br>
+            <div class="base">
+                <input type="submit" value="Login">
+                <p>Or Sign Up Using</p>
+                <div>
+                    <a href=""><img class="apple" src="Apple_Logo_1977.png" alt=""></a>
+                    <a href=""><img class="fb" src="Facebook.png" alt=""></a>
+                    <a href=""><img class="google" src="google.svg" alt=""></a>
+                    <a href=""><img class="twitter" src="Twitter.png" alt=""></a>
+                </div>
+                <br><br><br><br>
+                <p>Or Sign Up Using</p>
+                <button id="switch">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <div id="container-2">
+        <h1>SignUp</h1>
+        <form action="" method="POST">
+            <label for="">Username</label>
+            <p><i class="fas fa-id-card" id="user"></i><input type="text" placeholder="Type your username" required></p><hr>
+            <label for="">Password</label>
+            <p><i class="fas fa-key" id="pass"></i><input type="password" placeholder="Type your password" required></p><hr>
+            <label for="">Confirm-Password</label>
+            <p><i class="fas fa-key" id="pass"></i><input type="password" placeholder="Type your password" required></p><hr>
+
+            <!-- <a href="" class="fpass">Forget password?</a> --><br><br> 
+            <div class="base">
+                <input type="submit" value="Register">
+                <!-- <p>Or Sign Up Using</p>
+                <div>
+                    <a href=""><img class="apple" src="Apple_Logo_1977.png" alt=""></a>
+                    <a href=""><img class="fb" src="Facebook.png" alt=""></a>
+                    <a href=""><img class="google" src="google.svg" alt=""></a>
+                    <a href=""><img class="twitter" src="Twitter.png" alt=""></a>
+                </div> -->
+                <br><br><br><br>
+                <p>Or Sign Up Using</p>
+                <button id="switch-1">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector("#container-2").style.display = "none";
+
+        document.querySelector("#switch").addEventListener("click",function(){
+            document.querySelector("#container-1").style.display = "none";
+            document.querySelector("#container-2").style.display = "block";
+        }); 
+
+        document.querySelector("#switch-1").addEventListener("click",function(){
+            document.querySelector("#container-2").style.display = "none";
+            document.querySelector("#container-1").style.display = "block";
+        });
+    </script>
+</body>
+</html>
